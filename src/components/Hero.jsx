@@ -18,38 +18,33 @@ const Hero = () => (
       </div>
 
       <div className='flex flex-row justify-between items-center w-full'>
-        <h1 className='flex-1 font-poppings font-semibold ss:text-[72px] text-[52px] text-white'>
-          The Next <br className='sm:block hidden' />{' '}
-          <span className='text-gradient'>Generation</span>{' '}
+        <h1 className='flex-1 font-poppings font-semibold ss:text-[72px] text-[52px] animated-text'>
+          <span className='animated-letter'>S</span>
+          <span className='animated-letter'>k</span>
+          <span className='animated-letter'>y</span>
+          <span className='animated-letter'>l</span>
+          <span className='animated-letter'>e</span>
+          <span className='animated-letter'>r</span>{' '}
+          <span className='animated-letter'>R</span>
+          <span className='animated-letter'>a</span>
+          <span className='animated-letter'>s</span>
+          <span className='animated-letter'>m</span>
+          <span className='animated-letter'>u</span>
+          <span className='animated-letter'>s</span>
+          <span className='animated-letter'>s</span>
+          <span className='animated-letter'>e</span>
+          <span className='animated-letter'>n</span>
+          <br className='sm:block hidden' />
         </h1>
         <div className='ss:flex hidden md:mr-4 mr-0'>
           <GetStarted />
         </div>
       </div>
-      {/* Section to go  */}
-      <h1 className='font-poppings font-semibold ss:text-[68px] text-[52px] text-white'>
-        Payment Method
-      </h1>
-      <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      <p className={`${styles.paragraph} max-w-[500px] mt-5`}>
         Our team of experts uses a methodology to identify the credit cards most
         likely to fit your needs. We examine annual percentage rates, annual
         fees.
       </p>
-    </div>
-
-    <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
-      <img
-        src={robot}
-        alt='billing'
-        className='w-[100%] h-[100%] relative z-[5]'
-      />
-
-      <div className='absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient' />
-      <div className='absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient' />
-      <div className='absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient' />
-    </div>
-    <div className={`${styles.flexCenter} ss:hidden`}>
-      <GetStarted />
     </div>
   </section>
 )
