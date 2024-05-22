@@ -139,3 +139,31 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+.animated-text {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.animated-letter:hover { 
+  background: linear-gradient(247deg, 
+  rgba(54,219,151,0.9864320728291317) 5%, 
+  rgba(209,217,71,1) 32%, 
+  rgba(184,90,223,1) 66%,
+  rgba(204,20,98,1) 86%); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
