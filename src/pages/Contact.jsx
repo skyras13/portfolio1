@@ -6,7 +6,6 @@ import {
   CardDeal,
   Clients,
   CTA,
-  Footer,
   Stats,
   Testimonials,
 } from '../components'
@@ -23,7 +22,6 @@ const Contact = () => {
           <Testimonials />
           <Clients />
           <CTA />
-          <Footer />
         </div>
       </div>
     </div>
