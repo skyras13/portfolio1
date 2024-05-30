@@ -1,8 +1,7 @@
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 import { close, logo, menu } from '../assets'
 
-// Good practice to extrapolate different items that will be constant.
 import { navLinks } from '../constants'
 
 const Navbar = () => {
@@ -10,7 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt='hoobank' className='w-[124px] h-[32px]' />
+      <h1 className='flex-1 font-poppings font-semibold ss:text-[24px] text-[52px] animated-text'>
+        Skyras13Software*
+      </h1>
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
@@ -18,7 +19,7 @@ const Navbar = () => {
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] text-white
                         ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}>
-            <a href={`#${nav.id}`}>{nav.title}</a>
+            <Link to={`/${nav.id}`}>{nav.title}</Link>
           </li>
         ))}
       </ul>
@@ -46,7 +47,7 @@ const Navbar = () => {
                                     ? 'mb-0'
                                     : 'mb-4'
                                 }`}>
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                <Link to={`/${nav.id}`}>{nav.title}</Link>
               </li>
             ))}
           </ul>

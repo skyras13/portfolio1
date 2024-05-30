@@ -140,20 +140,34 @@
   filter: blur(750px);
 }
 
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .animated-text {
-  background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
+  background: linear-gradient(90deg, 
+    #027B8C 0%, 
+    #309DA1 20%, 
+    #08F2D8 40%, 
+    #192894 60%, 
+    #03e2ff 80%, 
+    #346E00 100%
   );
+  ;
+  background-size: 200% 200%; /* Increase background size to allow movement */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  animation: gradient-animation 5s linear infinite; /* Add animation */
 }
 
 .animated-letter:hover { 
